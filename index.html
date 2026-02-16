@@ -3,28 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Colección 01</title>
-  <meta name="description" content="Exploración personal sobre masa, especia y textura. Edición limitada." />
 
-  <link rel="preload" as="image" href="assets/img/hero/hero.webp" type="image/webp">
+  <title>Colección 01 · Sergio Rostra</title>
+  <meta
+    name="description"
+    content="Exploración personal sobre masa, especia y textura. Edición limitada. Piezas de repostería en pequeñas series, con intención."
+  />
 
-  <meta property="og:title" content="Colección 01">
-  <meta property="og:description" content="Exploración personal sobre masa, especia y textura. Edición limitada.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/cookies/Reminiscencias_arabes.webp">
+  <!-- Canonical + URL (importante en GitHub Pages) -->
+  <link rel="canonical" href="https://sros95.github.io/static-web-lab/" />
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Colección 01">
-  <meta name="twitter:description" content="Exploración personal sobre masa, especia y textura. Edición limitada.">
-  <meta name="twitter:image" content="assets/img/cookies/Reminiscencias_arabes.webp">
+  <!-- Robots -->
+  <meta name="robots" content="index,follow" />
+
+  <!-- Color del navegador (móvil) -->
+  <meta name="theme-color" content="#0b0b0b" />
+
+  <!-- Preload del hero -->
+  <link rel="preload" as="image" href="assets/img/hero/hero.webp" type="image/webp" fetchpriority="high" />
+
+  <!-- Favicons (opcional pero recomendable)
+       Si no los tienes aún, puedes comentar estas 2 líneas sin problema. -->
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <!-- Open Graph (URLs absolutas para que al compartir se vea bien) -->
+  <meta property="og:site_name" content="Sergio Rostra" />
+  <meta property="og:title" content="Colección 01 · Sergio Rostra" />
+  <meta property="og:description" content="Exploración personal sobre masa, especia y textura. Edición limitada." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sros95.github.io/static-web-lab/" />
+  <meta property="og:image" content="https://sros95.github.io/static-web-lab/assets/img/cookies/Reminiscencias_arabes.webp" />
+  <meta property="og:image:alt" content="Reminiscencias árabes — cookie de la Colección 01" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Colección 01 · Sergio Rostra" />
+  <meta name="twitter:description" content="Exploración personal sobre masa, especia y textura. Edición limitada." />
+  <meta name="twitter:image" content="https://sros95.github.io/static-web-lab/assets/img/cookies/Reminiscencias_arabes.webp" />
+  <meta name="twitter:image:alt" content="Reminiscencias árabes — cookie de la Colección 01" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
 
-  <header class="wrap hero">
+  <header class="wrap hero" role="banner">
     <div class="hero__text">
       <h1>COLECCIÓN 01</h1>
       <div class="rule" aria-hidden="true"></div>
@@ -35,7 +60,7 @@
     <figure class="hero__img">
       <img
         src="assets/img/hero/hero.webp"
-        alt="Cookie protagonista de la colección"
+        alt="Cookie protagonista de la Colección 01"
         loading="eager"
         decoding="async"
         fetchpriority="high"
@@ -48,7 +73,6 @@
   <main class="wrap" id="contenido">
     <section aria-label="Colección">
       <div class="grid">
-
         <article class="card">
           <img
             src="assets/img/cookies/Reminiscencias_arabes.webp"
@@ -63,7 +87,7 @@
           <p class="meta">Haba Tonka · caramelo salado · mantequilla noisette</p>
           <p class="desc">
             <span>Especias templadas y dulzor lácteo.</span>
-            <span>Primera pieza de la colección: un paseo por los jardines de La Alhambra</span>
+            <span>Primera pieza de la colección: un paseo por los jardines de La Alhambra.</span>
           </p>
         </article>
 
@@ -81,13 +105,13 @@
           <p class="meta">Flor de malva · hojas de té matcha · agracejo</p>
           <p class="desc">
             <span>Verde vegetal y floral suave.</span>
-            <span>Un amuleto jaspeado que desearás tener a mano en cualquier momento</span>
+            <span>Un amuleto jaspeado que querrás tener a mano en cualquier momento.</span>
           </p>
         </article>
 
         <article class="card">
           <img
-            src="assets/img/cookies/Miso_Walnut.webp"
+            src="assets/img/cookies/miso-walnut.webp"
             alt="Miso-Walnut"
             loading="lazy"
             decoding="async"
@@ -99,7 +123,7 @@
           <p class="meta">Chocolate negro · nuez · miso blanco</p>
           <p class="desc">
             <span>Umami elegante, dulzor contenido.</span>
-            <span>Cuando el chocolate se encuentra en tierras orientales</span>
+            <span>Cuando el chocolate se encuentra con tierras orientales.</span>
           </p>
         </article>
 
@@ -117,7 +141,7 @@
           <p class="meta">Lima · cardamomo verde · pimienta negra</p>
           <p class="desc">
             <span>Cítrico amable, disfrute prolongado.</span>
-            <span>Un contraste que te hará amar esta combinación</span>
+            <span>Un contraste que invita a repetir.</span>
           </p>
         </article>
 
@@ -134,30 +158,30 @@
           <h2>Brownie de café y cacao</h2>
           <p class="meta">Chocolate negro · café de especialidad · cacao puro</p>
           <p class="desc">
-            <span>Puro sabor envolvente a chocolate </span>
-            <span>Placer máximo del calor del chocolate</span>
+            <span>Puro sabor envolvente a chocolate.</span>
+            <span>Placer máximo con un final intenso y limpio.</span>
           </p>
         </article>
-
       </div>
     </section>
 
     <section class="contact" aria-label="Contacto">
       <h3>Contacto</h3>
       <p class="small">
-        Si quieres conocer más detalles, escríbeme por email.<br>
+        Si quieres conocer más detalles, escríbeme por email.<br />
         Respondo con calma.
       </p>
+
       <p>
         <a class="email" href="mailto:rproject75cl@gmail.com">rproject75cl@gmail.com</a>
       </p>
+
       <p class="small subtle">Pequeñas series · sin prisa · con intención.</p>
     </section>
   </main>
 
-  <footer class="wrap footer">
+  <footer class="wrap footer" role="contentinfo">
     <p class="small">© Sergio Rostra · Madrid</p>
   </footer>
-
 </body>
 </html>

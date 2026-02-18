@@ -4,14 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Colección 01 · Sergio Rostra</title>
+  <title>Colección 01 · Repostería artesanal · Sergio Rostra · Madrid</title>
   <meta
     name="description"
     content="Exploración personal sobre masa, especia y textura. Edición limitada. Piezas de repostería en pequeñas series, con intención."
   />
 
   <!-- Canonical + URL (importante en GitHub Pages) -->
-  <link rel="canonical" href="https://sros95.github.io/static-web-lab/" />
+  <link rel="canonical" href="https://www.srostra-lab.com/" />
 
   <!-- Robots -->
   <meta name="robots" content="index,follow" />
@@ -25,9 +25,9 @@
   <!-- Favicons (opcional pero recomendable)
        Si no los tienes aún, puedes comentar estas 2 líneas sin problema. -->
   <link rel="icon" href="/assets/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 
 
   <!-- Open Graph (URLs absolutas para que al compartir se vea bien) -->
@@ -35,16 +35,66 @@
   <meta property="og:title" content="Colección 01 · Sergio Rostra" />
   <meta property="og:description" content="Exploración personal sobre masa, especia y textura. Edición limitada." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sros95.github.io/static-web-lab/" />
-  <meta property="og:image" content="https://sros95.github.io/static-web-lab/assets/img/cookies/Reminiscencias_arabes.webp" />
+  <meta property="og:url" content="https://www.srostra-lab.com/" />
+  <meta property="og:image" content="https://www.srostra-lab.com/assets/img/cookies/Reminiscencias_arabes.webp" />
   <meta property="og:image:alt" content="Reminiscencias árabes — cookie de la Colección 01" />
+
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Colección 01 · Sergio Rostra" />
   <meta name="twitter:description" content="Exploración personal sobre masa, especia y textura. Edición limitada." />
-  <meta name="twitter:image" content="https://sros95.github.io/static-web-lab/assets/img/cookies/Reminiscencias_arabes.webp" />
+  <meta name="twitter:image" content="https://www.srostra-lab.com/assets/img/cookies/Reminiscencias_arabes.webp" />
   <meta name="twitter:image:alt" content="Reminiscencias árabes — cookie de la Colección 01" />
+
+  <!-- Schema.org (JSON-LD) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.srostra-lab.com/#website",
+      "url": "https://www.srostra-lab.com/",
+      "name": "Sergio Rostra",
+      "inLanguage": "es-ES"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.srostra-lab.com/#webpage",
+      "url": "https://www.srostra-lab.com/",
+      "name": "Colección 01 · Sergio Rostra",
+      "isPartOf": { "@id": "https://www.srostra-lab.com/#website" },
+      "inLanguage": "es-ES",
+      "description": "Colección 01: exploración personal de cookies artesanales sobre masa, especia y textura. Edición limitada. Pequeñas series con intención."
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.srostra-lab.com/#person",
+      "name": "Sergio Rostra",
+      "url": "https://www.srostra-lab.com/",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Madrid, España"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://www.srostra-lab.com/#coleccion-01",
+      "name": "Colección 01",
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "numberOfItems": 5,
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Reminiscencias árabes" },
+        { "@type": "ListItem", "position": 2, "name": "Numen Jaspeado" },
+        { "@type": "ListItem", "position": 3, "name": "Miso-Walnut" },
+        { "@type": "ListItem", "position": 4, "name": "Edición San Valentín 2026" },
+        { "@type": "ListItem", "position": 5, "name": "Brownie de café y cacao" }
+      ]
+    }
+  ]
+}
+</script>
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -190,7 +240,10 @@
   </main>
 
   <footer class="wrap footer" role="contentinfo">
-    <p class="small">© Sergio Rostra · Madrid</p>
+  <address class="small">
+    © Sergio Rostra · Madrid, España
+  </address>
   </footer>
+
 </body>
 </html>

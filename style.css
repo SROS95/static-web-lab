@@ -229,6 +229,12 @@ h3 {
   padding-bottom: 26px;
 }
 
+.footer address {
+  font-style: normal;
+  margin: 0;
+}
+
+
 /* Hover sutil solo si el dispositivo lo soporta */
 @media (hover: hover) {
   .card {

@@ -33,6 +33,7 @@ body {
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Layout base */
@@ -55,11 +56,22 @@ a:hover {
   text-decoration-thickness: 2px;
 }
 
-/* Focus accesible */
-:focus-visible {
+/* Fallback general */
+:focus {
   outline: 2px solid var(--focus);
   outline-offset: 3px;
   border-radius: 8px;
+}
+
+/* Si el navegador soporta focus-visible, evitamos outline al click con ratón */
+@supports selector(:focus-visible) {
+  :focus { outline: none; }
+
+  :focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
 }
 
 /* Accesibilidad: skip link */
@@ -145,6 +157,46 @@ h3 {
   border-radius: var(--radius);
   background: var(--soft);
   border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Fallback (sin Grid) */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: center;
+}
+
+.hero__text { flex: 1 1 320px; }
+.hero__img  { flex: 1 1 320px; }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.card {
+  width: 100%;
+}
+
+@media (min-width: 821px) {
+  .card { width: calc(50% - 11px); }
+}
+
+/* Si hay Grid, úsalo */
+@supports (display: grid) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card { width: auto; }
 }
 
 /* Grid y cards */

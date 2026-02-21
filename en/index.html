@@ -282,12 +282,15 @@
       localStorage.setItem(key, "en");
     });
   })();
-</script>
 
-<div class="langhint" id="langhint" hidden>
+  <div class="langhint" id="langhint" hidden>
   <span>It looks like your browser is set to English.</span>
   <a class="langhint__btn" href="/en/" id="goEN">View in English</a>
-<button class="langhint__close" type="button" id="closeHint" aria-label="Close">×</button></div>
+  <button class="langhint__close" type="button" id="closeHint" aria-label="Close">×</button></div>
+  if (!hint || !closeBtn || !goEN) return;
+
+</script>
+
 
 </body>
 

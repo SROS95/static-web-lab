@@ -245,6 +245,16 @@ h3 {
   margin-top: 0;
 }
 
+/* Colecciones (título encima de galería) */
+.collection__head{
+  padding-top: 26px;      /* separa del hero */
+  margin-bottom: 10px;    /* acerca al grid */
+}
+
+.collection__head h2{
+  margin: 0 0 6px;
+}
+
 /* Contacto */
 .contact {
   margin-top: 34px;
@@ -348,7 +358,8 @@ h3 {
     padding-right: calc(var(--pad) + 10px);
   }
 
-  .langhint{
+/* Language hint (global) */
+.langhint{
   position: fixed;
   left: 16px;
   right: 16px;

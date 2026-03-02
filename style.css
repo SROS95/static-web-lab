@@ -397,4 +397,15 @@ h3 {
   cursor: pointer;
   color: var(--muted);
 }
+.ig-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.ig-link:hover {
+  text-decoration: underline;
+}
 }

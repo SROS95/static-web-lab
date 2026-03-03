@@ -24,11 +24,9 @@
 
   <!-- Favicons (opcional pero recomendable)
        Si no los tienes aún, puedes comentar estas 2 líneas sin problema. -->
-  <link rel="icon" href="/assets/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-
+  <link rel="icon" href="/assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png">
 
   <!-- Open Graph (URLs absolutas para que al compartir se vea bien) -->
 <meta property="og:site_name" content="Sergio Rostra" />
@@ -95,7 +93,7 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "S Rostra Lab",
-      "url": "https://tudominio.com",
+      "url": "https://www.srostra-lab.com",
       "sameAs": ["https://www.instagram.com/srostra_lab/"]
     }
   ]
@@ -109,6 +107,8 @@
   <link rel="alternate" hreflang="x-default" href="https://www.srostra-lab.com/" />
 
   <meta property="og:see_also" content="https://www.instagram.com/srostra_lab/" />
+  <meta http-equiv="Content-Security-Policy" content=" default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
 
 <body>
@@ -156,7 +156,7 @@
           width="1200"
           height="1200"
           alt="Reminiscencias árabes"
-          loading="eager"
+          loading="lazy"
           fetchpriority="high"
           decoding="async"
           />
@@ -268,47 +268,13 @@
   </a>
   </footer>
 
-  <script>
-  (function () {
-    const key = "preferred_lang";
-    const dismissedKey = "lang_hint_dismissed";
-
-    // Si ya eligió idioma o cerró el aviso, no molestamos.
-    if (localStorage.getItem(key) || localStorage.getItem(dismissedKey)) return;
-
-    // Solo en la home raíz
-    if (location.pathname !== "/") return;
-
-    const langs = (navigator.languages && navigator.languages.length)
-      ? navigator.languages
-      : [navigator.language || ""];
-
-    const prefersEN = langs.some(l => String(l).toLowerCase().startsWith("en"));
-
-    if (!prefersEN) return;
-
-    const hint = document.getElementById("langhint");
-    const closeBtn = document.getElementById("closeHint");
-    const goEN = document.getElementById("goEN");
-
-    hint.hidden = false;
-
-    closeBtn.addEventListener("click", () => {
-      localStorage.setItem(dismissedKey, "1");
-      hint.hidden = true;
-    });
-
-    goEN.addEventListener("click", () => {
-      localStorage.setItem(key, "en");
-    });
-  })();
-</script>
-
 <div class="langhint" id="langhint" hidden>
   <span>Parece que tu navegador prefiere inglés.</span>
   <a class="langhint__btn" href="/en/" id="goEN">Ver en English</a>
   <button class="langhint__close" type="button" id="closeHint" aria-label="Cerrar">×</button>
 </div>
+
+  <script src="/assets/js/langhint.js" defer></script>
 
 </body>
 </html>

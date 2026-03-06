@@ -46,7 +46,7 @@
   <meta name="twitter:image:alt" content="Arabic Reminiscences — Collection 01 Cookie" />
 
   <!-- Schema.org (JSON-LD) -->
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -54,16 +54,22 @@
       "@type": "WebSite",
       "@id": "https://www.srostra-lab.com/#website",
       "url": "https://www.srostra-lab.com/",
-      "name": "Sergio Rostra"
+      "name": "S Rostra Lab",
+      "inLanguage": "en"
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.srostra-lab.com/en/#webpage",
-      "url": "https://www.srostra-lab.com/en/",
+      "@id": "https://www.srostra-lab.com/#webpage",
+      "url": "https://www.srostra-lab.com/",
       "name": "Collection 01 · Sergio Rostra",
-      "isPartOf": { "@id": "https://www.srostra-lab.com/#website" },
+      "isPartOf": {
+        "@id": "https://www.srostra-lab.com/#website"
+      },
+      "about": {
+        "@id": "https://www.srostra-lab.com/#organization"
+      },
       "inLanguage": "en",
-      "description": "Collection 01: A personal exploration of artisan cookies — dough, spice, and texture as language. Limited edition. Small batches, made with intention."
+      "description": "Collection 01: a personal exploration of artisanal cookies through dough, spice and texture. Limited edition. Small batches made with intention."
     },
     {
       "@type": "Person",
@@ -76,25 +82,150 @@
       }
     },
     {
+      "@type": "Organization",
+      "@id": "https://www.srostra-lab.com/#organization",
+      "name": "S Rostra Lab",
+      "url": "https://www.srostra-lab.com/",
+      "founder": {
+        "@id": "https://www.srostra-lab.com/#person"
+      },
+      "sameAs": [
+        "https://www.instagram.com/srostra_lab/"
+      ]
+    },
+    {
       "@type": "ItemList",
-      "@id": "https://www.srostra-lab.com/en/#coleccion-01",
+      "@id": "https://www.srostra-lab.com/#collection-01",
       "name": "Collection 01",
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
       "numberOfItems": 5,
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Arabic Reminiscences" },
-        { "@type": "ListItem", "position": 2, "name": "Numen Jaspeado" },
-        { "@type": "ListItem", "position": 3, "name": "Miso-Walnut" },
-        { "@type": "ListItem", "position": 4, "name": "Saint Valentine 2026 Edition" },
-        { "@type": "ListItem", "position": 5, "name": "Coffee and cacao brownie" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.srostra-lab.com/#product-reminiscencias-arabes"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.srostra-lab.com/#product-numen-jaspeado"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.srostra-lab.com/#product-miso-walnut"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.srostra-lab.com/#product-san-valentine-2026"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://www.srostra-lab.com/#product-brownie-coffee-cocoa"
+          }
+        }
       ]
     },
     {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "S Rostra Lab",
-      "url": "https://www.srostra-lab.com",
-      "sameAs": ["https://www.instagram.com/srostra_lab/"]
+      "@type": "Product",
+      "@id": "https://www.srostra-lab.com/#product-reminiscencias-arabes",
+      "name": "Reminiscencias árabes",
+      "image": "https://www.srostra-lab.com/assets/img/cookies/Reminiscencias_arabes-320.webp",
+      "description": "An artisanal cookie with tonka bean, salted caramel and brown butter. Warm spices and milky sweetness.",
+      "brand": {
+        "@type": "Brand",
+        "name": "S Rostra Lab"
+      },
+      "manufacturer": {
+        "@id": "https://www.srostra-lab.com/#organization"
+      },
+      "creator": {
+        "@id": "https://www.srostra-lab.com/#person"
+      },
+      "category": "Artisanal cookie"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.srostra-lab.com/#product-numen-jaspeado",
+      "name": "Numen Jaspeado",
+      "image": "https://www.srostra-lab.com/assets/img/cookies/Numen_jaspeado.webp",
+      "description": "An artisanal cookie with mallow flower, matcha tea leaves and barberry. Soft vegetal and floral notes.",
+      "brand": {
+        "@type": "Brand",
+        "name": "S Rostra Lab"
+      },
+      "manufacturer": {
+        "@id": "https://www.srostra-lab.com/#organization"
+      },
+      "creator": {
+        "@id": "https://www.srostra-lab.com/#person"
+      },
+      "category": "Artisanal cookie"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.srostra-lab.com/#product-miso-walnut",
+      "name": "Miso-Walnut",
+      "image": "https://www.srostra-lab.com/assets/img/cookies/miso-walnut.webp",
+      "description": "An artisanal cookie with dark chocolate, walnut and white miso. Elegant umami and restrained sweetness.",
+      "brand": {
+        "@type": "Brand",
+        "name": "S Rostra Lab"
+      },
+      "manufacturer": {
+        "@id": "https://www.srostra-lab.com/#organization"
+      },
+      "creator": {
+        "@id": "https://www.srostra-lab.com/#person"
+      },
+      "category": "Artisanal cookie"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.srostra-lab.com/#product-san-valentine-2026",
+      "name": "Valentine's Day Edition 2026",
+      "image": "https://www.srostra-lab.com/assets/img/cookies/S_Valentin.webp",
+      "description": "An artisanal cookie with lime, green cardamom and black pepper. Gentle citrus and long-lasting pleasure.",
+      "brand": {
+        "@type": "Brand",
+        "name": "S Rostra Lab"
+      },
+      "manufacturer": {
+        "@id": "https://www.srostra-lab.com/#organization"
+      },
+      "creator": {
+        "@id": "https://www.srostra-lab.com/#person"
+      },
+      "category": "Artisanal cookie"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.srostra-lab.com/#product-brownie-coffee-cocoa",
+      "name": "Coffee and Cocoa Brownie",
+      "image": "https://www.srostra-lab.com/assets/img/cookies/Brownie.webp",
+      "description": "An artisanal piece with dark chocolate, specialty coffee and pure cocoa. Deep flavour and a clean finish.",
+      "brand": {
+        "@type": "Brand",
+        "name": "S Rostra Lab"
+      },
+      "manufacturer": {
+        "@id": "https://www.srostra-lab.com/#organization"
+      },
+      "creator": {
+        "@id": "https://www.srostra-lab.com/#person"
+      },
+      "category": "Artisanal brownie"
     }
   ]
 }

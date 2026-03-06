@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="geo.region" content="ES-MD">
+  <meta name="geo.placename" content="Madrid">
+  <meta name="geo.position" content="40.4168;-3.7038">
+  <meta name="ICBM" content="40.4168, -3.7038">
 
   <title>SRostraLab · Repostería artesanal · Sergio Rostra · Madrid</title>
   <meta
@@ -53,7 +57,7 @@
       "@type": "WebSite",
       "@id": "https://www.srostra-lab.com/#website",
       "url": "https://www.srostra-lab.com/",
-      "name": "Sergio Rostra",
+      "name": "S Rostra Lab",
       "inLanguage": "es-ES"
     },
     {
@@ -62,6 +66,7 @@
       "url": "https://www.srostra-lab.com/",
       "name": "Colección 01 · Sergio Rostra",
       "isPartOf": { "@id": "https://www.srostra-lab.com/#website" },
+      "about": { "@id": "https://www.srostra-lab.com/#organization" },
       "inLanguage": "es-ES",
       "description": "Colección 01: exploración personal de cookies artesanales sobre masa, especia y textura. Edición limitada. Pequeñas series con intención."
     },
@@ -76,25 +81,118 @@
       }
     },
     {
+      "@type": "Organization",
+      "@id": "https://www.srostra-lab.com/#organization",
+      "name": "S Rostra Lab",
+      "url": "https://www.srostra-lab.com/",
+      "founder": { "@id": "https://www.srostra-lab.com/#person" },
+      "sameAs": [
+        "https://www.instagram.com/srostra_lab/"
+      ]
+    },
+    {
       "@type": "ItemList",
       "@id": "https://www.srostra-lab.com/#coleccion-01",
       "name": "Colección 01",
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
       "numberOfItems": 5,
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Reminiscencias árabes" },
-        { "@type": "ListItem", "position": 2, "name": "Numen Jaspeado" },
-        { "@type": "ListItem", "position": 3, "name": "Miso-Walnut" },
-        { "@type": "ListItem", "position": 4, "name": "Edición San Valentín 2026" },
-        { "@type": "ListItem", "position": 5, "name": "Brownie de café y cacao" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": { "@id": "https://www.srostra-lab.com/#product-reminiscencias-arabes" }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": { "@id": "https://www.srostra-lab.com/#product-numen-jaspeado" }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": { "@id": "https://www.srostra-lab.com/#product-miso-walnut" }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": { "@id": "https://www.srostra-lab.com/#product-san-valentin-2026" }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": { "@id": "https://www.srostra-lab.com/#product-brownie-cafe-cacao" }
+        }
       ]
     },
     {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "S Rostra Lab",
-      "url": "https://www.srostra-lab.com",
-      "sameAs": ["https://www.instagram.com/srostra_lab/"]
+      "@type": "Product",
+      "@id": "https://www.srostra-lab.com/#product-reminiscencias-arabes",
+      "name": "Reminiscencias árabes",
+      "image": "https://www.srostra-lab.com/assets/img/cookies/Reminiscencias_arabes-320.webp",
+      "description": "Cookie artesanal de haba tonka, caramelo salado y mantequilla noisette. Especias templadas y dulzor lácteo.",
+      "brand": {
+        "@type": "Brand",
+        "name": "S Rostra Lab"
+      },
+      "manufacturer": { "@id": "https://www.srostra-lab.com/#organization" },
+      "creator": { "@id": "https://www.srostra-lab.com/#person" },
+      "category": "Cookie artesanal"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.srostra-lab.com/#product-numen-jaspeado",
+      "name": "Numen Jaspeado",
+      "image": "https://www.srostra-lab.com/assets/img/cookies/Numen_jaspeado.webp",
+      "description": "Cookie artesanal de flor de malva, hojas de té matcha y agracejo. Verde vegetal y floral suave.",
+      "brand": {
+        "@type": "Brand",
+        "name": "S Rostra Lab"
+      },
+      "manufacturer": { "@id": "https://www.srostra-lab.com/#organization" },
+      "creator": { "@id": "https://www.srostra-lab.com/#person" },
+      "category": "Cookie artesanal"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.srostra-lab.com/#product-miso-walnut",
+      "name": "Miso-Walnut",
+      "image": "https://www.srostra-lab.com/assets/img/cookies/miso-walnut.webp",
+      "description": "Cookie artesanal de chocolate negro, nuez y miso blanco. Umami elegante y dulzor contenido.",
+      "brand": {
+        "@type": "Brand",
+        "name": "S Rostra Lab"
+      },
+      "manufacturer": { "@id": "https://www.srostra-lab.com/#organization" },
+      "creator": { "@id": "https://www.srostra-lab.com/#person" },
+      "category": "Cookie artesanal"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.srostra-lab.com/#product-san-valentin-2026",
+      "name": "Edición San Valentín 2026",
+      "image": "https://www.srostra-lab.com/assets/img/cookies/S_Valentin.webp",
+      "description": "Cookie artesanal de lima, cardamomo verde y pimienta negra. Cítrico amable y disfrute prolongado.",
+      "brand": {
+        "@type": "Brand",
+        "name": "S Rostra Lab"
+      },
+      "manufacturer": { "@id": "https://www.srostra-lab.com/#organization" },
+      "creator": { "@id": "https://www.srostra-lab.com/#person" },
+      "category": "Cookie artesanal"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.srostra-lab.com/#product-brownie-cafe-cacao",
+      "name": "Brownie de café y cacao",
+      "image": "https://www.srostra-lab.com/assets/img/cookies/Brownie.webp",
+      "description": "Pieza artesanal de chocolate negro, café de especialidad y cacao puro. Final intenso y limpio.",
+      "brand": {
+        "@type": "Brand",
+        "name": "S Rostra Lab"
+      },
+      "manufacturer": { "@id": "https://www.srostra-lab.com/#organization" },
+      "creator": { "@id": "https://www.srostra-lab.com/#person" },
+      "category": "Brownie artesanal"
     }
   ]
 }

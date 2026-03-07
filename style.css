@@ -463,9 +463,9 @@ h3 {
 }
 
 .social-links img{
-  width:18px;
-  height:18px;
-  opacity:0.7;
+  width:18px !important;
+  height:18px !important;
+  transition:opacity .2s ease;
 }
 
 .social-links img:hover{

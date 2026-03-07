@@ -408,4 +408,49 @@ h3 {
 .ig-link:hover {
   text-decoration: underline;
 }
+
+.langhint[hidden] { display:none !important; }
+
+}
+.lang-hover {
+  position: fixed;
+  bottom: 20px;
+  right: 24px;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: inherit;
+  opacity: 0.65;
+  z-index: 1000;
+}
+
+.lang-label {
+  cursor: default;
+}
+
+.lang-menu {
+  display: inline-block;
+  margin-left: 0.5rem;
+  opacity: 0;
+  transform: translateX(-4px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.lang-hover:hover .lang-menu {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.lang-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.lang-menu a:hover {
+  text-decoration: underline;
+}
+
+.lang-menu strong {
+  font-weight: 600;
 }

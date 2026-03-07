@@ -462,12 +462,12 @@ h3 {
   margin-top:8px;
 }
 
-.social-links img{
-  width:18px !important;
-  height:18px !important;
-  transition:opacity .2s ease;
+.social-links svg{
+  width:18px;
+  height:18px;
+  transition:opacity .25s ease;
 }
 
-.social-links img:hover{
+.social-links svg:hover{
   opacity:1;
 }

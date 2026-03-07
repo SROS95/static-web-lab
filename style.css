@@ -457,17 +457,24 @@ h3 {
 
 .social-links{
   display:flex;
-  gap:14px;
-  align-items:center;
-  margin-top:8px;
+  gap: 16px;
 }
 
 .social-links svg{
   width:18px;
   height:18px;
+  opacity: .55;
   transition:opacity .25s ease;
+  transform:.25s ease;
 }
 
 .social-links svg:hover{
   opacity:1;
+  transform:translateY(-1px);
+}
+
+.footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }

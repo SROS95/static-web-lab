@@ -454,3 +454,20 @@ h3 {
 .lang-menu strong {
   font-weight: 600;
 }
+
+.social-links{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  margin-top:8px;
+}
+
+.social-links img{
+  width:18px;
+  height:18px;
+  opacity:0.7;
+}
+
+.social-links img:hover{
+  opacity:1;
+}

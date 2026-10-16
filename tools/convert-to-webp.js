@@ -3,8 +3,8 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 
-const inputDir = path.join(__dirname, "assets", "img", "original");
-const outputDir = path.join(__dirname, "assets", "img", "cookies");
+const inputDir = path.join(__dirname, "..", "assets", "img", "original");
+const outputDir = path.join(__dirname, "..", "assets", "img", "cookies");
 
 // Ajustes recomendados
 const SIZE = 1200;     // 1200x1200 para cookies (suficiente y ligero)

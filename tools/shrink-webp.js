@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 
-const dir = path.join(__dirname, "assets", "img", "cookies");
+const dir = path.join(__dirname, "..", "assets", "img", "cookies");
 const SIZE = 1200;
 const QUALITY = 80;
 

@@ -86,3 +86,6 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Local source images (do not add new originals to the public site)
+assets/img/original/*

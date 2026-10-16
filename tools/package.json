@@ -4,10 +4,10 @@
   "description": "",
   "main": "convert-to-webp.js",
   "scripts": {
-  "images:cookies": "node convert-cookies-webp.js",
-  "images:photos": "node convert-to-webp.js",
-  "images:shrink": "node shrink-webp.js"
-},
+    "images:responsive": "node generate-responsive-images.js",
+    "images:photos": "node convert-to-webp.js",
+    "images:shrink": "node shrink-webp.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

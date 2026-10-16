@@ -3,7 +3,7 @@
   --pad: 22px;
 
   --txt: #1f1f1f;
-  --muted: #5f6368;/* antes #6b6b6b */
+  --muted: #5f6368;
   --line: #e8e8e8;
   --bg: #ffffff;
   --soft: #f7f7f7;
@@ -157,46 +157,6 @@ h3 {
   border-radius: var(--radius);
   background: var(--soft);
   border: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-/* Fallback (sin Grid) */
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 28px;
-  align-items: center;
-}
-
-.hero__text { flex: 1 1 320px; }
-.hero__img  { flex: 1 1 320px; }
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 22px;
-}
-
-.card {
-  width: 100%;
-}
-
-@media (min-width: 821px) {
-  .card { width: calc(50% - 11px); }
-}
-
-/* Si hay Grid, úsalo */
-@supports (display: grid) {
-  .hero {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .card { width: auto; }
 }
 
 /* Grid y cards */
@@ -357,61 +317,8 @@ h3 {
     padding-left: calc(var(--pad) + 10px);
     padding-right: calc(var(--pad) + 10px);
   }
-
-/* Language hint (global) */
-.langhint{
-  position: fixed;
-  left: 16px;
-  right: 16px;
-  bottom: 16px;
-  z-index: 9999;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 14px;
-  border: 1px solid var(--line);
-  background: var(--bg);
-  border-radius: 14px;
-  box-shadow: var(--shadow-md);
-  max-width: var(--max);
-  margin: 0 auto;
 }
 
-.langhint__btn{
-  display: inline-block;
-  padding: 8px 12px;
-  border-radius: 12px;
-  background: var(--soft);
-  border: 1px solid var(--line);
-  text-decoration: none;
-  color: var(--txt);
-  white-space: nowrap;
-}
-
-.langhint__close{
-  border: 0;
-  background: transparent;
-  font-size: 20px;
-  line-height: 1;
-  cursor: pointer;
-  color: var(--muted);
-}
-.ig-link {
-  display: inline-block;
-  margin-top: 12px;
-  font-size: 0.9rem;
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.ig-link:hover {
-  text-decoration: underline;
-}
-
-.langhint[hidden] { display:none !important; }
-
-}
 .lang-hover {
   position: fixed;
   bottom: 20px;
@@ -465,7 +372,7 @@ h3 {
   height:18px;
   opacity: .55;
   transition:opacity .25s ease;
-  transform:.25s ease;
+  transition: opacity .25s ease, transform .25s ease;
 }
 
 .social-links svg:hover{

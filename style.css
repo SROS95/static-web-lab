@@ -216,6 +216,30 @@ h3 {
   margin: 0 0 6px;
 }
 
+/* Sobre */
+.about {
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.about h3 {
+  margin-bottom: 12px;
+}
+
+.about__lead {
+  margin: 0 0 14px;
+  font-style: italic;
+}
+
+.about p {
+  max-width: 68ch;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
 /* Contacto */
 .contact {
   margin-top: 34px;

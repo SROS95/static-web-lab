@@ -1,0 +1,7 @@
+SRostraLab v1.1.2 — estabilización de geometría de imágenes
+
+Cambio aplicado:
+- Añadido aspect-ratio: 1 / 1; al bloque .card img de style.css.
+- No se ha modificado ningún otro archivo.
+
+Sustituye style.css en la raíz del proyecto y publica con Git.

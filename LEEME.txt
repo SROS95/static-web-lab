@@ -1,7 +1,24 @@
-SRostraLab v1.1.2 — estabilización de geometría de imágenes
+SRostraLab v1.1.3 — ajuste final de Schema.org
 
-Cambio aplicado:
-- Añadido aspect-ratio: 1 / 1; al bloque .card img de style.css.
-- No se ha modificado ningún otro archivo.
+Archivos modificados:
+- index.html
+- en/index.html
 
-Sustituye style.css en la raíz del proyecto y publica con Git.
+Cambios:
+- Las 5 piezas pasan de Product a CreativeWork.
+- Se sustituyen los IDs #product-* por #work-*.
+- Cada CreativeWork usa creator -> Sergio Rostra y publisher -> S Rostra Lab.
+- Se elimina inLanguage del nodo WebSite compartido; se mantiene en cada WebPage.
+- Se conserva la CSP exclusivamente en Cloudflare: no se reintroduce meta CSP.
+- No se modifica contenido visible, CSS, imágenes ni enlaces.
+
+Publicación recomendada:
+git add index.html en/index.html
+git commit -m "Refine structured data for creative works"
+git push
+
+Después:
+1. Cloudflare: Purge Cache (si hiciera falta).
+2. Search Console: Probar URL publicada en / y /en/.
+3. Confirmar que desaparecen los 5 fragmentos de producto no válidos.
+4. Solicitar indexación de ambas URLs.
